@@ -1,7 +1,10 @@
 export const Person = ({ data }) => {
     return `
-        <div class="artist artist-${data.key}">
-            ${data.name}
+        <div class="person person-${data.key}">
+            <div class="mask">
+                <p class="person-name">${data.name}</p>
+            </div>
+            
         </div>
     `
 }

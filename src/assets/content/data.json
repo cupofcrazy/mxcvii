@@ -1,0 +1,32 @@
+[
+    {
+        "key": 0,
+        "name": "Ahmadu Bello",
+        "age": 97,
+        "dateOfBirth": {
+            "birth": 1912,
+            "death": 1980
+        },
+        "works": []
+    },
+    {
+        "key": 0,
+        "name": "Nnamdi Azikiwe",
+        "age": 97,
+        "dateOfBirth": {
+            "birth": 1912,
+            "death": 1980
+        },
+        "works": []
+    },
+    {
+        "key": 0,
+        "name": "Muritala Mohammed",
+        "age": 97,
+        "dateOfBirth": {
+            "birth": 1912,
+            "death": 1980
+        },
+        "works": []
+    }
+]

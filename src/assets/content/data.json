@@ -3,17 +3,27 @@
         "key": 0,
         "name": "Ahmadu Bello",
         "age": 97,
-        "dateOfBirth": {
+        "DOB": {
             "birth": 1912,
             "death": 1980
         },
         "works": []
     },
     {
-        "key": 0,
+        "key": 1,
         "name": "Nnamdi Azikiwe",
         "age": 97,
-        "dateOfBirth": {
+        "DOB": {
+            "birth": 1912,
+            "death": 1980
+        },
+        "works": []
+    },
+    {
+        "key": 2,
+        "name": "Muritala Mohammed",
+        "age": 97,
+        "DOB": {
             "birth": 1912,
             "death": 1980
         },
@@ -21,9 +31,149 @@
     },
     {
         "key": 0,
+        "name": "Ahmadu Bello",
+        "age": 97,
+        "DOB": {
+            "birth": 1912,
+            "death": 1980
+        },
+        "works": []
+    },
+    {
+        "key": 1,
+        "name": "Nnamdi Azikiwe",
+        "age": 97,
+        "DOB": {
+            "birth": 1912,
+            "death": 1980
+        },
+        "works": []
+    },
+    {
+        "key": 2,
         "name": "Muritala Mohammed",
         "age": 97,
-        "dateOfBirth": {
+        "DOB": {
+            "birth": 1912,
+            "death": 1980
+        },
+        "works": []
+    },
+    {
+        "key": 0,
+        "name": "Ahmadu Bello",
+        "age": 97,
+        "DOB": {
+            "birth": 1912,
+            "death": 1980
+        },
+        "works": []
+    },
+    {
+        "key": 1,
+        "name": "Nnamdi Azikiwe",
+        "age": 97,
+        "DOB": {
+            "birth": 1912,
+            "death": 1980
+        },
+        "works": []
+    },
+    {
+        "key": 2,
+        "name": "Muritala Mohammed",
+        "age": 97,
+        "DOB": {
+            "birth": 1912,
+            "death": 1980
+        },
+        "works": []
+    },
+    {
+        "key": 0,
+        "name": "Ahmadu Bello",
+        "age": 97,
+        "DOB": {
+            "birth": 1912,
+            "death": 1980
+        },
+        "works": []
+    },
+    {
+        "key": 1,
+        "name": "Nnamdi Azikiwe",
+        "age": 97,
+        "DOB": {
+            "birth": 1912,
+            "death": 1980
+        },
+        "works": []
+    },
+    {
+        "key": 2,
+        "name": "Muritala Mohammed",
+        "age": 97,
+        "DOB": {
+            "birth": 1912,
+            "death": 1980
+        },
+        "works": []
+    },
+    {
+        "key": 0,
+        "name": "Ahmadu Bello",
+        "age": 97,
+        "DOB": {
+            "birth": 1912,
+            "death": 1980
+        },
+        "works": []
+    },
+    {
+        "key": 1,
+        "name": "Nnamdi Azikiwe",
+        "age": 97,
+        "DOB": {
+            "birth": 1912,
+            "death": 1980
+        },
+        "works": []
+    },
+    {
+        "key": 2,
+        "name": "Muritala Mohammed",
+        "age": 97,
+        "DOB": {
+            "birth": 1912,
+            "death": 1980
+        },
+        "works": []
+    },
+    {
+        "key": 0,
+        "name": "Ahmadu Bello",
+        "age": 97,
+        "DOB": {
+            "birth": 1912,
+            "death": 1980
+        },
+        "works": []
+    },
+    {
+        "key": 1,
+        "name": "Nnamdi Azikiwe",
+        "age": 97,
+        "DOB": {
+            "birth": 1912,
+            "death": 1980
+        },
+        "works": []
+    },
+    {
+        "key": 2,
+        "name": "Muritala Mohammed",
+        "age": 97,
+        "DOB": {
             "birth": 1912,
             "death": 1980
         },

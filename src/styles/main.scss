@@ -1,6 +1,10 @@
 // DEFAULTS
 @import './fonts.scss';
+
+
 $bg: #532020;
+$black: #111;
+$yellow: #DCD0BC;
 $text-color: #EEE;
 $text-color-active: #F00;
 
@@ -14,10 +18,11 @@ $text-color-active: #F00;
 html, body {
     width: 100%;
     height: 100%;
+    // overflow: hidden;
 }
 
 body {
-    background: $bg;
+    background: $yellow;
 }
 
 #app {
@@ -26,27 +31,85 @@ body {
     margin: 0 auto;
 }
 
-.mask { overflow: hidden; }
+// HEADER 
+.header {
+    position: fixed;
+    z-index: 9999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Faktum, sans-serif;
+    font-size: .7rem;
+    width: 100%;
+    height: 65px;
+    background: $yellow;
+    border-bottom: 1px solid $black;
+    padding: 0 3em;
 
-.person {
-    margin: 10px 0;
-    text-align: center;
-    color: $text-color;
-    font-family: GrandSlang, sans-serif;
-    font-size: 8vw;
-    cursor: pointer;
+    .logo {
+        font-weight: bold;
+    }
 
-    &.active {
-        color: $text-color-active;
+    .sm-circle {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: $black;
     }
 }
+.mask { overflow: hidden; }
 
 .main {
+    padding: 100px 0;
     width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // height: 100%;
 
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        padding:  0 20px;
+
+        .grid-item {
+            margin: 0px 0;
+            &:nth-child(2n) {
+                // padding-top: 20px;
+            }
+        }
+    }
+    .title {
+        font-family: Faktum, sans-serif;
+        font-size: 25vw;
+        text-align: center;
+        margin: 20px 0;
+        // transform: rotate(-5deg);
+    }
+
+
+}
+
+.person {
+    border: 1px solid $black;
+
+    .image {
+        width: 100%;
+        height: 35vw;
+        background: $black;
+        overflow: hidden;
+
+        img {
+            width: 120%;
+            // height: 100%;
+        }
+    }
+    .info {
+        font-family: Faktum, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: .6rem;
+        padding: 15px;
+        text-transform: uppercase;
+    }
 
 }

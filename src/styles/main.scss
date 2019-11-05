@@ -4,7 +4,7 @@
 
 $bg: #532020;
 $black: #111;
-$pink: #FFEEE5;
+$pink: pink;
 
 
 * {
@@ -21,6 +21,10 @@ html, body {
 
 body {
     background: $pink;
+}
+
+.mask {
+    overflow: hidden;
 }
 
 #app {
@@ -44,7 +48,7 @@ body {
     display: inline-block;
     margin:  0 0 1em 0;
     h1 {
-        font-family: Faktum, sans-serif;
+        font-family: Recoleta, sans-serif;
         font-size: 15vw;
         text-align: center;
     }
@@ -183,6 +187,11 @@ body {
 
 // RESPONSIVE NESS
 @media (max-width: 640px){
+    .heading {
+        h1 {
+         font-size: 28vw;
+        }
+    }
         .quote-item {
             .quote {
                 font-size: 1rem;

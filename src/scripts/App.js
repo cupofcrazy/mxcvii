@@ -106,7 +106,8 @@ export default () => {
                         
                     }, {
                         y: 0,
-                        autoAlpha: 1
+                        autoAlpha: 1,
+                        ease: Expo.easeInOut
                     })
                     
                     .fromTo(author, .5, {
@@ -117,7 +118,8 @@ export default () => {
                     }, {
                         y: 0,
                         scale: 1,
-                        autoAlpha: 1
+                        autoAlpha: 1,
+                        ease: Expo.easeInOut
                     })
                     .staggerFromTo(lines, .5, {
                         scaleX: 0,
@@ -184,7 +186,8 @@ export default () => {
                         
                     }, {
                         y: 0,
-                        autoAlpha: 1
+                        autoAlpha: 1,
+                        ease: Expo.easeInOut
                     })
                     
                     .fromTo(author, .5, {
@@ -195,7 +198,8 @@ export default () => {
                     }, {
                         y: 0,
                         scale: 1,
-                        autoAlpha: 1
+                        autoAlpha: 1,
+                        ease: Expo.easeInOut
                     })
                     .staggerFromTo(lines, .5, {
                         scaleX: 0,
@@ -223,7 +227,7 @@ export default () => {
         utils.copyToClipboard(QUOTE_TEXT);
 
         const tl = new TimelineMax();
-        copyToButton.querySelector('p').innerText = 'Copied';
+        copyToButton.querySelector('p').innerText = 'Copied!';
         
         setTimeout(() => {
             copyToButton.querySelector('p').innerText = 'Copy';

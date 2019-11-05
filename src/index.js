@@ -8,4 +8,6 @@ window.addEventListener('DOMContentLoaded', () => {
     loader = new Loader()
     loader.init()
     App()
+
+    
 })

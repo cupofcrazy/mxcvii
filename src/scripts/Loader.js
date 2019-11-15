@@ -22,8 +22,8 @@ export default class Loader {
             y: '-1000px',
 
         })
-        .to(this.loader.querySelector('.circle'), 3, {
-            scale: `${100}%`,
+        .to(this.loader.querySelector('.circle'), 1, {
+            scale: `${150}%`,
             ease: Expo.easeInOut
         })
     }
@@ -42,14 +42,15 @@ export default class Loader {
        const introTl = new TimelineMax();
 
        introTl
+            .add("start")
             .from(homeEls.title, 1, {
                 y: '110%',
                 ease: Expo.easeInOut
-            })
+            }, "start")
             .from(homeEls.initQuote, 1, {
                 autoAlpha: 0,
                 ease: Expo.easeInOut
-            })
+            }, "start")
             .staggerFrom(homeEls.arrows, 1, {
                 rotation: 360,
                 scale: 0,
@@ -61,6 +62,6 @@ export default class Loader {
                 scale: 0,
                 autoAlpha: 0,
                 ease: Expo.easeInOut
-            })
+            }, "start")
     }
 }

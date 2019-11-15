@@ -1,10 +1,12 @@
 import quotes from '../assets/content/data.json'
 import utils from '../utils'
 import '../styles/main.scss'
-import { TweenMax, Expo, TimelineMax } from 'gsap';
+import { Expo, TimelineMax } from 'gsap';
 import { Quote } from './quote'
 
 /**
+ * @author Tobi Balogun
+ * @version 1.0
  * @param None
  */
 
@@ -19,7 +21,7 @@ export default () => {
 
     utils.shuffle(quotes_copy)
 
-    // CONTROLS
+    // CONTROLSv b
     const controls = document.querySelector('.controls')
 
 
@@ -70,14 +72,14 @@ export default () => {
 
 
                 tl.to(quote, .5, {
-                    y: -50,
+                    y: 50,
                     autoAlpha: 0,
-                    ease: Expo.easeInOut
+                    ease: Expo.easeOut
                     
-                })
+                }, .5)
                 .staggerTo(lines, .5, {
                     scaleX: 0,
-                    ease: Expo.easeInOut
+                    ease: Expo.easeOut
                     
                 })
                 .to(author, .5, {
@@ -102,12 +104,12 @@ export default () => {
                     tl.fromTo(quote, .5, {
                         y: -50,
                         autoAlpha: 0,
-                        ease: Expo.easeInOut
+                        ease: Expo.easeOut
                         
                     }, {
                         y: 0,
                         autoAlpha: 1,
-                        ease: Expo.easeInOut
+                        ease: Expo.easeOut
                     })
                     
                     .fromTo(author, .5, {
@@ -119,15 +121,15 @@ export default () => {
                         y: 0,
                         scale: 1,
                         autoAlpha: 1,
-                        ease: Expo.easeInOut
+                        ease: Expo.easeOut
                     })
                     .staggerFromTo(lines, .5, {
                         scaleX: 0,
-                        ease: Expo.easeInOut
+                        ease: Expo.easeOut
                         
                     }, {
                         scaleX: 1,
-                        ease: Expo.easeInOut
+                        ease: Expo.easeOut
                     })
                 }, 1500)
                 
@@ -152,12 +154,12 @@ export default () => {
                 tl.to(quote, .5, {
                     y: -50,
                     autoAlpha: 0,
-                    ease: Expo.easeInOut
+                    ease: Expo.easeOut
                     
                 })
                 .staggerTo(lines, .5, {
                     scaleX: 0,
-                    ease: Expo.easeInOut
+                    ease: Expo.easeOut
                     
                 })
                 .to(author, .5, {
@@ -168,7 +170,7 @@ export default () => {
                 })
                 // ANIMATE-IN CURRENT SELECTED QUOTE
                 setTimeout(() => {
-                    count++;
+                    count--;
                     const tl = new TimelineMax( )
 
                     const nextQuote = quoteEls[count]
@@ -180,14 +182,14 @@ export default () => {
 
 
                     tl.fromTo(quote, .5, {
-                        y: -50,
+                        y: 50,
                         autoAlpha: 0,
-                        ease: Expo.easeInOut
+                        ease: Expo.easeOut
                         
                     }, {
                         y: 0,
                         autoAlpha: 1,
-                        ease: Expo.easeInOut
+                        ease: Expo.easeOut
                     })
                     
                     .fromTo(author, .5, {
@@ -199,15 +201,15 @@ export default () => {
                         y: 0,
                         scale: 1,
                         autoAlpha: 1,
-                        ease: Expo.easeInOut
+                        ease: Expo.easeOut
                     })
                     .staggerFromTo(lines, .5, {
                         scaleX: 0,
-                        ease: Expo.easeInOut
+                        ease: Expo.easeOut
                         
                     }, {
                         scaleX: 1,
-                        ease: Expo.easeInOut
+                        ease: Expo.easeOut
                     })
                 }, 1500)
                 
@@ -235,12 +237,6 @@ export default () => {
     })
 
 
-        
-        
-        
-
-
-
-
+    
 
 }
